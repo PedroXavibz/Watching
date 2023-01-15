@@ -1,3 +1,71 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-param-reassign": [
+      "error",
+      {
+        "props": true,
+        "ignorePropertyModificationsFor": [
+          "file"
+        ]
+      }
+    ],
+    "no-const-assign": "error",
+    "no-async-promise-executor": "error",
+    "for-direction": "error",
+    "no-await-in-loop": "error",
+    "no-duplicate-imports": "error",
+    "camelcase": "error",
+    "no-plusplus": "off",
+    "no-tabs": [
+      "error",
+      {
+        "allowIndentationTabs": true
+      }
+    ],
+    "func-names": [
+      "error",
+      "as-needed"
+    ],
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "func-style": [
+      "error",
+      "declaration",
+      {
+        "allowArrowFunctions": true
+      }
+    ],
+    "allowIndentationTabs": 0,
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": false
+      }
+    ],
+    "quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function"
+      }
+    ],
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "no-unreachable": "warn"
+  }
 }
