@@ -1,0 +1,128 @@
+.container__login__createRoom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.18rem;
+}
+
+.container__login, .createRoom {
+  background-color: var(--primary-color); 
+  box-shadow: var(--box-shadow-secondary);
+  border-radius: var(--radius-maximum);
+  padding: 1.8rem;
+}
+
+.container__login, .container__createRoom {
+  width: 45%;
+  height: 53rem;
+  padding: 1.8rem;
+}
+
+.form {
+  width: 92%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form .item {
+  margin-top: 4.5rem;
+}
+
+.container__login .form {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 3.5rem;
+}
+
+.container__login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__login .userIcon {
+  width: 5.4rem;
+  height: 5.4rem;
+  fill: var(--default-color);
+}
+
+.container__login .title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__login .line {
+  width: 40%;
+  height: 0.2rem;
+  background-color: var(--default-color);
+}
+
+.container__login .text {
+  margin: 0 0.5rem;
+
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  color: var(--default-color);
+}
+
+.container__login .link {
+  display: flex;
+  align-items: center;
+
+  align-self: flex-start;
+  margin-left: 2.3rem;
+
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+  color: var(--link-color);
+}
+
+.container__login .link .link_icon {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.container__login .link .link_icon path {
+  stroke: var(--link-color);
+}
+
+.btn {
+  padding: 1rem;
+  margin: 0 auto;
+
+  border-radius: var(--radius-minimum);
+
+  background-color: var(--secondary-color);
+  color: var(--default-color);
+  font-weight: 800;
+}
+
+.createRoom {
+  height: calc(53rem / 1.98);
+}
+
+.container__createRoom .title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: var(--default-color);
+}
+
+.container__createRoom .listItem {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--default-color);
+}
+
+.container__createRoom .doneIcon {
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-right: 0.7rem;
+}
