@@ -1,7 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font: 'Poppins', sans-serif;
+
+  --background-gradient: linear-gradient(115deg, #140F0C 0%, #2A2C30 100%);
+  --primary-color: #222222;
+  --secondary-color: #444444;
+
+  --twitch-color: #5A3E85;
+  --youtube-color: #FF0000;
+  --default-color: #FBFCFB;
+  --link-color: #1365E0;
+  --success-color: 4ECB71;
+
+  --box-shadow-primary: 0px 1px 4px rgba(0, 0, 0, 0.16), 0px 0px 0px 3px #333333; 
+  --box-shadow-secondary: 0px -12px 30px rgba(0, 0, 0, 0.12), 
+    0px 4px 6px rgba(0, 0, 0, 0.12), 
+    0px 12px 13px rgba(0, 0, 0, 0.17), 
+    0px -3px 5px rgba(0, 0, 0, 0.09); 
+
+  --radius-maximum: 1.1rem;
+  --radius-minimum: 0.5rem;
 }
 
 * {
@@ -14,6 +33,10 @@ html,
 body {
   font-size: 62.5%;
   line-height: 1.8;
+  background: var(--background-gradient);
+  height: 100vh;
+
+  font-family: var(--font);
 }
 
 
