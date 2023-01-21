@@ -4,10 +4,7 @@
     "no-param-reassign": [
       "error",
       {
-        "props": true,
-        "ignorePropertyModificationsFor": [
-          "file"
-        ]
+        "props": false
       }
     ],
     "no-const-assign": "error",
@@ -15,7 +12,7 @@
     "for-direction": "error",
     "no-await-in-loop": "error",
     "no-duplicate-imports": "error",
-    "camelcase": "error",
+    "camelcase": 0,
     "no-plusplus": "off",
     "no-tabs": [
       "error",
