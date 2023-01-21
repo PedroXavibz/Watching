@@ -12,6 +12,7 @@
   --default-color: #FBFCFB;
   --link-color: #1365E0;
   --success-color: 4ECB71;
+  --error-color: #e60b13;
 
   --box-shadow-primary: 0px 1px 4px rgba(0, 0, 0, 0.16), 0px 0px 0px 3px #333333; 
   --box-shadow-secondary: 0px -12px 30px rgba(0, 0, 0, 0.12), 
@@ -37,6 +38,7 @@ body {
   height: 100vh;
 
   font-family: var(--font);
+  color: var(--default-color);
 }
 
 
