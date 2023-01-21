@@ -10,7 +10,8 @@ type Props = {
   children?: ReactNode,
   placeHolder: string,
   value: string,
-  setValue: Dispatch<SetStateAction<string>>
+  setValue: Dispatch<SetStateAction<string>>,
+  isError?: boolean
 }
 
 
@@ -21,12 +22,13 @@ const Input = ({
   children,
   placeHolder = 'Type something',
   value = '',
-  setValue
+  setValue,
+  isError
 }: Props) => {
   const [isHover, setIsHover] = useState(false);
 
   return (
-    <div className={[styles.container__input, isHover ? styles.container__input_focus : '', className].join(' ')}>
+    <div className={[styles.container__input, isHover ? styles.container__input_focus : '', isError && styles.error, className].join(' ')}>
       <label className={
         [isHover || value ? styles.label_up : styles.label, value && !isHover ? styles.label_white : ''].join(' ')}
         htmlFor="userInput">{placeHolder}</label>

@@ -39,7 +39,7 @@
   left: 2%;
 
   font-size: 1.2rem;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .container__input .label_up {
@@ -84,4 +84,9 @@
 
 .container__input .icon_focus {
   color: var(--link-color);
+}
+
+.error {
+  color: var(--error-color);
+  border-color: var(--error-color);
 }
