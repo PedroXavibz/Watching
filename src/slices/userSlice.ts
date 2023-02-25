@@ -2,10 +2,11 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import User from '@/types/user.types';
 
 const initialState: User = {
+  anonymous: true,
   roomID: '',
   id: '',
   name: '',
-  img: ''
+  image: '',
 };
 
 export const userSlice = createSlice({
@@ -13,12 +14,16 @@ export const userSlice = createSlice({
   initialState,
   reducers: {
     setUser: (state, action: PayloadAction<User>) => {
-      const { roomID, id, name, img } = action.payload;
+      const { anonymous, roomID, id, name, image } = action.payload;
 
+      state.anonymous = anonymous;
       state.roomID = roomID;
       state.id = id;
       state.name = name;
-      state.img = img;
+      state.image = image;
+    },
+    setAnonymous: (state, action: PayloadAction<boolean>) => {
+      state.anonymous = action.payload;
     },
     setRoomID: (state, action: PayloadAction<string>) => {
       state.roomID = action.payload;
@@ -30,11 +35,12 @@ export const userSlice = createSlice({
       state.name = action.payload;
     },
     setImg: (state, action: PayloadAction<string>) => {
-      state.img = action.payload;
-    }
-  }
+      state.image = action.payload;
+    },
+  },
 });
 
-export const { setUser, setName, setID, setImg } = userSlice.actions;
+export const { setUser, setAnonymous, setRoomID, setID, setName, setImg } =
+  userSlice.actions;
 
 export default userSlice.reducer;
