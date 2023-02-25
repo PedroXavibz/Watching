@@ -3,7 +3,6 @@ import CredentialsProvider from 'next-auth/providers/credentials';
 import GoogleProvider from 'next-auth/providers/google';
 import GithubProvider from 'next-auth/providers/github';
 
-
 export const authOptions = {
   providers: [
     GoogleProvider({
@@ -27,7 +26,7 @@ export const authOptions = {
         const res = await fetch('/your/endpoint', {
           method: 'POST',
           body: JSON.stringify(credentials),
-          headers: { 'Content-Type': 'application/json' }
+          headers: { 'Content-Type': 'application/json' },
         });
         const user = await res.json();
 
@@ -37,10 +36,11 @@ export const authOptions = {
         }
         // Return null if user data could not be retrieved
         return null;
-      }
-    })
+      },
+    }),
   ],
-  secret: process.env.JWT_SECRET
+  secret: process.env.JWT_SECRET,
+  site: process.env.NEXTAUTH_URL,
 };
 
 export default NextAuth(authOptions);
