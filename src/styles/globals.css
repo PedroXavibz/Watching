@@ -1,24 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --font: 'Poppins', sans-serif;
+  --font: "Poppins", sans-serif;
 
-  --background-gradient: linear-gradient(115deg, #140F0C 0%, #2A2C30 100%);
+  --background-gradient: linear-gradient(115deg, #140f0c 0%, #2a2c30 100%);
   --primary-color: #222222;
   --secondary-color: #444444;
 
-  --twitch-color: #5A3E85;
-  --youtube-color: #FF0000;
-  --default-color: #FBFCFB;
-  --link-color: #1365E0;
-  --success-color: 4ECB71;
+  --twitch-color: #5a3e85;
+  --youtube-color: #ff0000;
+  --default-color: #fbfcfb;
+  --link-color: #45aeff;
+  --success-color: #4ecb71;
   --error-color: #e60b13;
 
-  --box-shadow-primary: 0px 1px 4px rgba(0, 0, 0, 0.16), 0px 0px 0px 3px #333333; 
-  --box-shadow-secondary: 0px -12px 30px rgba(0, 0, 0, 0.12), 
-    0px 4px 6px rgba(0, 0, 0, 0.12), 
-    0px 12px 13px rgba(0, 0, 0, 0.17), 
-    0px -3px 5px rgba(0, 0, 0, 0.09); 
+  --box-shadow-primary: 0px 1px 4px rgba(0, 0, 0, 0.16), 0px 0px 0px 3px #333333;
+  --box-shadow-secondary: 0px -12px 30px rgba(0, 0, 0, 0.12),
+    0px 4px 6px rgba(0, 0, 0, 0.12), 0px 12px 13px rgba(0, 0, 0, 0.17),
+    0px -3px 5px rgba(0, 0, 0, 0.09);
 
   --radius-maximum: 1.1rem;
   --radius-minimum: 0.5rem;
@@ -35,19 +34,40 @@ body {
   font-size: 62.5%;
   line-height: 1.8;
   background: var(--background-gradient);
-  height: 100vh;
+  min-height: 100vh;
 
   font-family: var(--font);
   color: var(--default-color);
 }
 
-
 a {
-  color: inherit;
-  text-decoration: none;
+  color: var(--link-color);
 }
 
 ul {
   list-style-type: none;
   list-style-position: inside;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  html,
+  body {
+    font-size: 58%;
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+  html,
+  body {
+    /* font-size: 30%; */
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  html,
+  body {
+    /* font-size: 70%; */
+  }
 }
