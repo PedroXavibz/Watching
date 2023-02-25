@@ -1,0 +1,64 @@
+.videoInfo {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.info,
+.room {
+  padding: 0.5rem 1rem;
+  background: var(--primary-color);
+  border-radius: var(--radius-maximum);
+  box-shadow: var(--box-shadow-primary);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.title span {
+  position: relative;
+}
+
+.title span::before {
+  content: "";
+  position: absolute;
+  bottom: 10%;
+
+  width: 56%;
+  height: 0.2rem;
+
+  background-color: var(--default-color);
+}
+
+.infoList {
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  margin-left: 1.6rem;
+  list-style-type: circle;
+}
+
+.room {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 2rem 0;
+}
+
+.room h1 {
+  font-size: 1.3rem;
+}
+
+.btns {
+  font-size: 1.5rem;
+}
+
+.btns path {
+  color: var(--default-color);
+}
+
+.btns button:first-of-type {
+  margin-right: 1rem;
+}
