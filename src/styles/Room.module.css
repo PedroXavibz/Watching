@@ -1,0 +1,59 @@
+.section__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.section__info__btns button {
+  position: relative;
+  margin-left: 2.5rem;
+  padding: 0.6rem 1.8rem;
+
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--default-color);
+
+  background-color: var(--secondary-color);
+  border-radius: var(--radius-maximum);
+}
+
+.activeTab {
+  box-shadow: 0 .8rem 2.4rem rgba(251, 252, 251, 0.2);
+}
+
+.section__info__btns button svg {
+  position: absolute;
+  top: -10%;
+  right: -5%;
+}
+
+.section__video_player__chat_viewers_playlist {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.video_player {
+  display: flex;
+  flex-direction: column;
+  width: 64%;
+}
+
+.chat_viewers_playlist {
+  width: 30%;
+}
+
+.chat_viewers_playlist div {
+  animation: 600ms ease-out forwards show;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
