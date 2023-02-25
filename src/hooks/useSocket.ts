@@ -19,6 +19,10 @@ const useSocket = ({ enable, onConnected }: Props) => {
     ref.current?.emit(action.CREATE_ROOM, user);
   };
 
+  const joinRoom = (id: string) => {
+    ref.current?.emit(action.JOIN_ROOM, id);
+  };
+
   useEffect(() => {
     if (!enable) {
       return;
@@ -69,7 +73,7 @@ const useSocket = ({ enable, onConnected }: Props) => {
 
   }, [enable, onConnected]);
 
-  return { room, createRoom };
+  return { room, createRoom, joinRoom };
 };
 
 export default useSocket;
