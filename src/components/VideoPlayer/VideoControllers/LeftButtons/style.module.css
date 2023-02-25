@@ -1,0 +1,14 @@
+.btn {
+  color: var(--default-color);
+  font-size: 2.2rem;
+  display: flex;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left .btn {
+  margin-right: 0.8rem;
+}

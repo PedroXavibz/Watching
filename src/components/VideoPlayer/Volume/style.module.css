@@ -1,0 +1,53 @@
+.btn {
+  font-size: 2.2rem;
+  color: var(--default-color);
+  z-index: 10;
+  display: flex;
+}
+
+.volume {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.helper {
+  width: 12rem;
+  height: 3.7rem;
+
+  position: absolute;
+
+  background-color: transparent;
+}
+
+.volumeInput {
+  width: 7.5rem;
+  margin-left: 0.5rem;
+
+  cursor: pointer;
+  background-color: transparent;
+  z-index: 10;
+}
+
+.volumeInput[type="range"]::-moz-range-progress,
+.volumeInput[type="range"]::-moz-range-track {
+  padding: 0.06rem;
+  border-radius: 0.3rem;
+}
+
+.volumeInput[type="range"]::-moz-range-track {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.volumeInput[type="range"]::-moz-range-thumb {
+  width: 1.3rem;
+  height: 1.3rem;
+
+  background-color: var(--default-color);
+  border: none;
+}
+
+.volumeInput[type="range"]::-moz-range-progress {
+  background-color: var(--default-color);
+}

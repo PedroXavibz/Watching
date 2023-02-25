@@ -1,0 +1,17 @@
+.videoController {
+  width: 100%;
+
+  position: absolute;
+  bottom: -0.2%;
+
+  padding: 0 1rem;
+}
+
+.videoControllerButtons {
+  width: 100%;
+  padding: 1.2rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
