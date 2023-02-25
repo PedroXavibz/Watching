@@ -1,0 +1,97 @@
+.messageForm {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  height: 10%;
+  padding: 1rem;
+}
+
+.messageInput {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 0.4rem;
+
+  box-shadow: var(--box-shadow-primary);
+  background: var(--primary-color);
+}
+
+.input,
+.placeHolder {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--default-color);
+}
+
+.messageInput .input {
+  position: relative;
+  bottom: 0%;
+  left: 0;
+
+  width: 85%;
+  max-height: 10rem;
+  padding: 1.5rem 0.5rem;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  overflow-y: auto;
+  z-index: 10;
+
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  scrollbar-width: none;
+}
+
+.input:focus {
+  box-shadow: var(--box-shadow-secondary);
+}
+
+.hiddenBreakLine br {
+  display: none;
+}
+
+.placeHolder {
+  position: absolute;
+  bottom: 50%;
+  left: 2%;
+
+  transform: translateY(50%);
+
+  color: gray;
+
+  user-select: none;
+  cursor: text;
+}
+
+.messageInput .containerBtns {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  justify-items: flex-end;
+  padding: 1rem;
+}
+
+.messageInput .containerBtns .btn {
+  margin-left: 0.8rem;
+
+  font-size: 1.9rem;
+  color: var(--default-color);
+}
+
+.messageInput .containerBtns .btnEmoji {
+  font-size: 1.6rem;
+  color: var(--default-color);
+}

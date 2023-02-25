@@ -1,0 +1,10 @@
+.chat {
+  height: 100%;
+  max-height: 50.5rem;
+
+  box-shadow: var(--box-shadow-primary);
+  border-radius: var(--radius-maximum);
+  background-color: transparent;
+
+  position: relative;
+}

@@ -1,0 +1,21 @@
+.emojiPicker {
+  width: 100%;
+  height: 50%;
+
+  position: absolute;
+  right: 0;
+  bottom: 12%;
+  z-index: 1990;
+}
+
+.emojiPicker div {
+  width: 100%;
+  height: 100%;
+}
+
+.emojiPicker div em-emoji-picker {
+  width: 100%;
+  height: 100%;
+  z-index: 1990;
+  position: absolute;
+}
